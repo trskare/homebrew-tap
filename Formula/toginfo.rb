@@ -5,20 +5,20 @@
 class Toginfo < Formula
   desc "Entur-powered train departures CLI"
   homepage "https://github.com/trskare/toginfo"
-  version "0.1.1"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trskare/toginfo/releases/download/v0.1.1/toginfo_0.1.1_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e122e605aa5c5f4247e22cafb38ff04381e7b046f1b9624565002d360a83c3a5"
+      url "https://github.com/trskare/toginfo/releases/download/v0.1.3/toginfo_0.1.3_darwin_amd64.tar.gz"
+      sha256 "402cb61c6e24a7c0940b26e835e6342d1cb788de486057ba55e941b0f97e9cc8"
 
       def install
         bin.install "toginfo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trskare/toginfo/releases/download/v0.1.1/toginfo_0.1.1_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e3aa68492a87a3b802e5d5432be7dc873155b5dfbd450969a6cef55023c1c677"
+      url "https://github.com/trskare/toginfo/releases/download/v0.1.3/toginfo_0.1.3_darwin_arm64.tar.gz"
+      sha256 "3bef82a9ac3d7f07e2250f0415dbd562f4453c5db61ef4ba58c660fc1b600f1c"
 
       def install
         bin.install "toginfo"
@@ -28,15 +28,15 @@ class Toginfo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trskare/toginfo/releases/download/v0.1.1/toginfo_0.1.1_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "117512be052173841e5e9f39813a7efb12ba2913655ee9f43a0ca9de393ca7f1"
+      url "https://github.com/trskare/toginfo/releases/download/v0.1.3/toginfo_0.1.3_linux_amd64.tar.gz"
+      sha256 "3e3e4609013bacbde1d8f20f15aec7e9a60fde3538040f5e1c7aa414e655c16b"
       def install
         bin.install "toginfo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trskare/toginfo/releases/download/v0.1.1/toginfo_0.1.1_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "8ffd10b80e068b632e7152aeaeee0b3e5e657d4361f84644aee93c5aa3b4359e"
+      url "https://github.com/trskare/toginfo/releases/download/v0.1.3/toginfo_0.1.3_linux_arm64.tar.gz"
+      sha256 "f2cdb3d002a30f71a2051883f2c80c42eee0759a6ed8c09aad34a99e12d83f6f"
       def install
         bin.install "toginfo"
       end
